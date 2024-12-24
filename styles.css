@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('cactus-hero.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+    text-align: center;
+    margin: 20px;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+.care-tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.tip {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    width: calc(45% - 40px); /* Adjust width for responsiveness */
+    text-align: center;
+}
+
+.tip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    flex: 2;
+    min-width: 300px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #45a049;
+}
+
+.cactus-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cactus-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust max width as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* General Reset */
+body, h1, h2, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #f4f4f4;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .care-tips {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tip {
+        width: 100%; /* Stack tips vertically */
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .tip h3 {
+        font-size: 1.2em;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+        padding: 0.4em;
+    }
+}
+
+
+/* @media (max-width: 480px) {
+    main h2 {
+        font-size: 20px;
+    }
+
+    main .tip h3 {
+        font-size: 18px;
+    }
+
+    main .tip p {
+        font-size: 14px;
+    }
+} */
+
+
+/* @media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tip {
+        width: calc(100% - 40px); /* Full width on smaller screens */
+    /* }
+} */
+
+/* @media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+} */ 
